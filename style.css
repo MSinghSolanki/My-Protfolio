@@ -10,7 +10,7 @@ html{
     scroll-behavior: smooth;
 }
 
-.contenedor-header{
+.container{
     background: #1e2326;
     position: fixed;
     width: 100%;
@@ -18,7 +18,7 @@ html{
     left: 0;
     z-index: 99;
 }
-.contenedor-header header{
+.container header{
     max-width: 1100px;
     margin: auto;
     display: flex;
@@ -26,17 +26,17 @@ html{
     align-items: center;
     padding: 15px 20px;
 }
-.contenedor-header header .logo a{
+.container header .logo a{
     font-family: 'Righteous';
     font-size: 36px;
     color: #1CB698;
     text-decoration: none;
 }
-.contenedor-header header ul{
+.container header ul{
     display: flex;
     list-style: none;
 }
-.contenedor-header header nav ul li a{
+.container header nav ul li a{
     text-align: none;
     color: #fff;
     margin: 0 15px;
@@ -44,7 +44,7 @@ html{
     transition: .5s;
     text-decoration: none;
 }
-.contenedor-header header nav ul li a:hover{
+.container header nav ul li a:hover{
     color: #1CB698;
 }
 .nav-responsive{
@@ -56,7 +56,7 @@ html{
     display: none;
 }
 /* SECCION I N I C I O */
-.inicio{
+.icons{
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
     url(img/fondo.jpg);
     background-size: cover;
@@ -65,7 +65,7 @@ html{
     display: flex;
     align-items: center;
 }
-.inicio .contenido-banner{
+.icons .content-header{
     padding: 20px;
     background-color: #1e2326;
     max-width: 350px;
@@ -73,7 +73,7 @@ html{
     text-align: center;
     border-radius: 40px;
 }
-.inicio .contenido-banner img{
+.icons .content-header img{
     margin-top: 40px;
     border: 10px solid #1CB698;
     display: block;
@@ -81,16 +81,16 @@ html{
     margin: auto;
     border-radius: 100%;
 }
-.inicio .contenido-banner h1{
+.icons .content-header h1{
     margin-top: 40px;
     font-size: 42px;
     font-family: 'Righteous';
 }
-.inicio .contenido-banner h2{
+.icons .content-header h2{
     font-size: 15px;
     font-weight: normal;
 }
-.inicio .contenido-banner .redes a{
+.icons .content-header .social a{
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -103,68 +103,68 @@ html{
     font-size: 20px;
     transition: .3s;
 }
-.inicio .contenido-banner .redes a:hover{
+.icons .content-header .social a:hover{
     background-color: #1CB698;
 }
-.sobremi{
+.about{
     background-color: #1e2326;
     color: #fff;
     padding: 50px 20px;
 }
-.sobremi .contenido-seccion{
+.about .content-about{
     max-width: 1100px;
     margin: auto;
 }
-.sobremi h2{
+.about h2{
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 
 }
-.sobremi .contenido-seccion p{
+.about .content-about p{
     font: 18px;
     line-height: 22px;
     margin-bottom: 20px;
 }
-.sobremi .contenido-seccion p span{
+.about .content-about p span{
     color: #1CB698;
     font-weight: bold;
 }
-.sobremi .fila{
+.about .file{
     display: flex;
 }
-.sobremi .fila .col
+.about .file .col
 {
     width: 50%;
 }
-.sobremi .fila .col h3{
+.about .file .col h3{
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
 }
-.sobremi .fila .col ul{
+.about .file .col ul{
     list-style: none;
 }
-.sobremi .fila .col ul li{
+.about .file .col ul li{
     margin: 12px 0;
 }
-.sobremi .fila .col ul li strong{
+.about .file .col ul li strong{
     display: inline-block;
     color: #1CB698;
     width: 130px;
 }
-.sobremi .fila .col ul li span{
+.about .file .col ul li span{
     background-color: #1CB698;
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
 }
-.sobremi .fila .col .contenedor-intereses{
+.about .file .col .content-interest{
     display: flex;
     flex-wrap: wrap;
 }
-.sobremi .fila .col .contenedor-intereses .interes{
+.about .file .col .content-interest .interest{
     width: 100px;
     height: 100px;
     background-color: #252A2E;
@@ -175,14 +175,14 @@ html{
     align-items: center;
     justify-content: center;
     transition: .3s;
-}.sobremi .fila .col .contenedor-intereses .interes:hover{
+}.about .file .col .content-interest .interest:hover{
     background-color: #1CB698;
 }
-.sobremi .fila .col .contenedor-intereses .interes i{
+.about .file .col .content-interest .interest i{
     font-size: 30px;
     margin-bottom: 10px;
 }
-.sobremi button{
+.about button{
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
@@ -195,7 +195,7 @@ html{
     position: relative;
     z-index: 10;
 }
-.sobremi button .overlay{
+.about button .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -205,7 +205,7 @@ html{
     z-index: -1;
     transition: 1s;
 }
-.sobremi button:hover .overlay{
+.about button:hover .overlay{
     width: 100%;
 }
 /* SECCION S K I L L S */
@@ -214,7 +214,7 @@ html{
     color: #fff;
     padding: 50px 20px;
 }
-.skills .contenido-seccion{
+.skills .content-about{
     max-width: 1100px;
     margin: auto;
 }
@@ -225,14 +225,14 @@ html{
     padding: 20px 0;
 
 }
-.skills .fila{
+.skills .file{
     display: flex;
 }
-.skills .fila .col{
+.skills .file .col{
     width: 50%;
     padding: 0 20px;
 }
-.skills .fila .col h3{
+.skills .file .col h3{
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
@@ -268,241 +268,323 @@ html{
     right: -15px;
     font-size: 14px;
 }
-/* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .javascript{
-    width: 0%;
-    animation: 2s javascript forwards;
-}
-@keyframes javascript {
-    0%{width: 0%;}
-    100%{width: 75%;}
+* Headers */
+h1, h5, p {
+  text-align: center;
 }
 
-.skills .skill .htmlcss{
-    width: 0%;
-    animation: 2s htmlcss forwards;
-}
-@keyframes htmlcss {
-    0%{width: 0%;}
-    100%{width: 89%;}
+.my-skills{
+  color: khaki;
+  margin-top: 1em;
+  letter-spacing: 1.4px;
+  line-height: 1.2;
 }
 
-.skills .skill .photoshop{
-    width: 0%;
-    animation: 2s photoshop forwards;
-}
-@keyframes photoshop {
-    0%{width: 0%;}
-    100%{width: 95%;}
+h5 {
+  color: linen;
 }
 
-.skills .skill .wordpress{
-    width: 0%;
-    animation: 2s wordpress forwards;
-}
-@keyframes wordpress {
-    0%{width: 0%;}
-    100%{width: 81%;}
+p {
+  color: darkgrey;
 }
 
-.skills .skill .drupal{
-    width: 0%;
-    animation: 2s drupal forwards;
-}
-@keyframes drupal {
-    0%{width: 0%;}
-    100%{width: 55%;}
-}
-
-.skills .skill .comunicacion{
-    width: 0%;
-    animation: 2s comunicacion forwards;
-}
-@keyframes comunicacion {
-    0%{width: 0%;}
-    100%{width: 80%;}
+/* Wrapper */
+.wrapper {
+  width: 90%;
+	max-width: 900px;
+	margin: 3em auto;
+	text-align: center;
 }
 
-.skills .skill .trabajo{
-    width: 0%;
-    animation: 2s trabajo forwards;
-}
-@keyframes trabajo {
-    0%{width: 0%;}
-    100%{width: 70%;}
-}
-
-.skills .skill .creatividad{
-    width: 0%;
-    animation: 2s creatividad forwards;
-}
-@keyframes creatividad {
-    0%{width: 0%;}
-    100%{width: 99%;}
+/* Badge */
+.badge {
+	margin: 1.5em 3em;
+	width: 6.4em;
+	height: 6.4em;
+	border-radius: 20%;
+	display: inline-block;
+	top: 0;
+	transition: all 0.2s ease;
+  box-shadow: 8px 10px 12px 3px rgba(0, 0, 0, 0.43);
 }
 
-.skills .skill .dedicacion{
-    width: 0%;
-    animation: 2s dedicacion forwards;
+.rounded {
+  width: 70px;
+	height: 70px;
+  background: white;
+  position: absolute;
+  margin: 15px 16px auto;
+  z-index: 10;
+	border-radius: 30%;
+  box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.23);
 }
-@keyframes dedicacion {
-    0%{width: 0%;}
-    100%{width: 65%;}
+  i.fab {
+    font-size: 2.6em;
+		margin-top: 16px;
+  }
+
+
+/* Colors */
+.blue {
+    background: dodgerblue;
+    color: deepskyblue;
 }
 
-.skills .skill .proyect{
-    width: 0%;
-    animation: 2s proyect forwards;
+.orange {
+  background: darkorange;
+  color: orange;
 }
-@keyframes proyect {
-    0%{width: 0%;}
-    100%{width: 94%;}
+
+.gold {
+  background: gold;
+  color: gold;
 }
-/* SECCION CURRICULUM */
-.curriculum{
-    background-color: #1e2326;
+
+.black {
+  background: rgb(53, 49, 92);
+  color: black;
+}
+
+.purple {
+  background: mediumpurple;
+  color: slategray;
+}
+
+.green {
+  background: yellowgreen;
+  color: darkslategray;
+}
+
+.crimson {
+  background: crimson;
+  color: firebrick;
+}
+
+.steel {
+  background: steelblue;
+  color: gold;
+}
+
+.pink {
+  background: hotpink;
+  color: palevioletred;
+}
+
+.rebecca {
+  background: rebeccapurple;
+  color: rebeccapurple;
+}
+
+.gainsboro {
+  background: gainsboro;
+  color: orangered;
+}
+
+/* Education */
+
+.edu{
+  text-align: center;
+}
+
+.educate {
+  --col-gap: 2rem;
+  --row-gap: 2rem;
+  --line-w: 0.25rem;
+  display: grid;
+  grid-template-columns: var(--line-w) 1fr;
+  grid-auto-columns: max-content;
+  column-gap: var(--col-gap);
+  list-style: none;
+  width: min(60rem, 90%);
+  margin-inline: auto;
+}
+
+/* line */
+.educate::before {
+  content: "";
+  grid-column: 1;
+  grid-row: 1 / span 20;
+  background: rgb(225, 225, 225);
+  border-radius: calc(var(--line-w) / 2);
+}
+
+/* columns*/
+
+/* row gaps */
+.educate .educ:not(:last-child) {
+  margin-bottom: var(--row-gap);
+}
+
+/* card */
+.educate .educ {
+  grid-column: 2;
+  --inlineP: 1.5rem;
+  margin-inline: var(--inlineP);
+  grid-row: span 2;
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+}
+
+/* date */
+.educate .educ .date {
+  --dateH: 3rem;
+  height: var(--dateH);
+  margin-inline: calc(var(--inlineP) * -1);
+
+  text-align: center;
+  background-color: var(--accent-color);
+
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+
+  display: grid;
+  place-content: center;
+  position: relative;
+
+  border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
+}
+
+/* date flap */
+.educate .educ .date::before {
+  content: "";
+  width: var(--inlineP);
+  aspect-ratio: 1;
+  background: var(--accent-color);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
+  position: absolute;
+  top: 100%;
+
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  right: 0;
+}
+
+/* circle */
+.educate .educ .date::after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  aspect-ratio: 1;
+  background: var(--bgColor);
+  border: 0.3rem solid var(--accent-color);
+  border-radius: 50%;
+  top: 50%;
+
+  transform: translate(50%, -50%);
+  right: calc(100% + var(--col-gap) + var(--line-w) / 2);
+}
+
+/* title descr */
+.educate .educ .title,
+.educate .educ .descr {
+  background: var(--bgColor);
+  position: relative;
+  padding-inline: 1.5rem;
+}
+.educate .educ .title {
+  overflow: hidden;
+  padding-block-start: 1.5rem;
+  padding-block-end: 1rem;
+  font-weight: 500;
+}
+.educate .educ .descr {
+  padding-block-end: 1.5rem;
+  font-weight: 300;
+}
+
+/* shadows */
+.educate .educ .title::before,
+.educate .educ .descr::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 0.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  left: 50%;
+  border-radius: 50%;
+  filter: blur(4px);
+  transform: translate(-50%, 50%);
+}
+.educate .educ .title::before {
+  bottom: calc(100% + 0.125rem);
+}
+
+.educate .educ .descr::before {
+  z-index: -1;
+  bottom: 0.25rem;
+}
+
+@media (min-width: 40rem) {
+  .educate {
+    grid-template-columns: 1fr var(--line-w) 1fr;
+  }
+  .educate::before {
+    grid-column: 2;
+  }
+  .educate .educ:nth-child(odd) {
+    grid-column: 1;
+  }
+  .educate .educ:nth-child(even) {
+    grid-column: 3;
+  }
+
+  /* start second card */
+  .educate .educ:nth-child(2) {
+    grid-row: 2/4;
+  }
+
+  .educate .educ:nth-child(odd) .date::before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    left: 0;
+  }
+
+  .educate .educ:nth-child(odd) .date::after {
+    transform: translate(-50%, -50%);
+    left: calc(100% + var(--col-gap) + var(--line-w) / 2);
+  }
+  .educate .educ:nth-child(odd) .date {
+    border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
+  }
+}
+/* SECCION projects */
+.projects{
+    background-color: #252A2E;
     color: #fff;
     padding: 50px 20px;
 }
-.curriculum .contenido-seccion{
+.projects .content-about{
     max-width: 1100px;
     margin: auto;
 }
-.curriculum h2{
+.projects h2{
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
-
 }
-.curriculum .fila{
-    display: flex;
-    justify-content: space-between;
-}
-.curriculum .fila .col{
-    width: 49%;
-    padding: 0 20px;
-}
-.curriculum .fila .col h3{
-    font-size: 28px;
-    font-family: 'Righteous';
-    margin-bottom: 25px;
-}
-.curriculum .fila .izquierda{
-    border-right: 2px solid #252A2E;
-}
-.curriculum .fila .derecha{
-    border-left: 2px solid #252A2E;
-}
-.curriculum .fila .item{
-    padding: 25px;
-    margin-bottom: 30px;
-    background-color: #252A2E;
-    position: relative;
-}
-.curriculum .fila .item h4{
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-.curriculum .fila .item .casa{
-    color: #1CB698;
-    font-size: 22px;
-    font-weight: bold;
-    display: block;
-}
-.curriculum .fila .item .fecha{
-    display: block;
-    color: #1CB698;
-    margin-bottom: 10px;
-}
-.curriculum .fila .item p{
-    line-height: 24px;
-}
-.curriculum .fila .izq{
-    border-right: 2px solid #1CB698;
-    margin-right: 20px;
-}
-.curriculum .fila .der{
-    border-left: 2px solid #1CB698;
-    margin-left: 20px;
-}
-.curriculum .fila .item .conectori{
-    height: 2px;
-    background-color: #1CB698;
-    width: 47px;
-    position: absolute;
-    top: 50%;
-    right: -47px;
-    z-index: 5;
-}
-.curriculum .fila .item .conectori .circuloi{
-    display: block;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: #1CB698;
-    float: right;
-    position: relative;
-    bottom: 4px;
-}
-.curriculum .fila .item .conectord{
-    height: 2px;
-    background-color: #1CB698;
-    width: 47px;
-    position: absolute;
-    top: 50%;
-    left: -47px;
-    z-index: 5;
-}
-.curriculum .fila .item .conectord .circulod{
-    display: block;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: #1CB698;
-    float: left;
-    position: relative;
-    bottom: 4px;
-}
-/* SECCION PORTFOLIO */
-.portfolio{
-    background-color: #252A2E;
-    color: #fff;
-    padding: 50px 20px;
-}
-.portfolio .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
-}
-.portfolio h2{
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 20px 0;
-}
-.portfolio .galeria{
+.projects .pro{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.portfolio .galeria .proyecto{
+.projects .pro .prot{
     position: relative;
     max-width: 340px;
     height: fit-content;
     margin: 10px;
     cursor: pointer;
 }
-.portfolio .galeria .proyecto img{
+.projects .pro .prot img{
     width: 100%;
     display: block;
 }
-.portfolio .galeria .proyecto .overlay{
+.projects .pro .prot .overlay{
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
     text-align: center;
-    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+    background: linear-gradient(rgba(11, 12, 12, 0.8), rgba(28,182,152,.8));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -511,42 +593,85 @@ html{
     letter-spacing: 3px;
     opacity: 0;
 }
-.portfolio .galeria .proyecto .overlay h3{
+.projects .pro .prot .overlay h3{
     margin-bottom: 20px;
     transition: 1s;
 }
-.portfolio .galeria .proyecto .overlay:hover{
+.projects .pro .prot .overlay:hover{
     opacity: 1;
 }
-.portfolio .galeria .proyecto .overlay:hover h3{
+.projects .pro .prot .overlay:hover h3{
     margin-bottom: 0px;
 }
+.btn{
+    display: flex;
+}
+/* CSS */
+.button-55 {
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: .7rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
 /* SECCION CONTACTO */
-.contacto{
+.contact{
     background-image: url(img/contact_bg.png);
     background-color: #1e2326;
     color: #fff;
     padding: 50px 0;
 }
-.contacto .contenido-seccion{
+.contact .content-about{
     max-width: 1100px;
     margin: auto;
 }
-.contacto h2{
+.contact h2{
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
-.contacto .fila{
+.contact .file{
     display: flex;
 }
-.contacto .col{
+.contact .col{
     width: 50%;
     padding: 10px;
     position: relative;
 }
-.contacto .col input, .contacto .col textarea{
+.contact .col input, .contact .col textarea{
     display: block;
     width: 100%;
     padding: 18px;
@@ -556,7 +681,7 @@ html{
     color: #fff;
     font-size: 18px;
 }
-.contacto button{
+.contact button{
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
@@ -569,7 +694,7 @@ html{
     position: relative;
     z-index: 10;
 }
-.contacto button .overlay{
+.contact button .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -579,13 +704,13 @@ html{
     z-index: -1;
     transition: 1s;
 }
-.contacto button:hover .overlay{
+.contact button:hover .overlay{
     width: 100%;
 }
-.contacto .col img{
+.contact .col img{
     width: 100%;
 }
-.contacto .col .info{
+.contact .col .info{
     position: absolute;
     top: 40%;
     background-color: #252A2E;
@@ -594,13 +719,13 @@ html{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.contacto .col .info ul{
+.contact .col .info ul{
     list-style: none;
 }
-.contacto .col .info ul li{
+.contact .col .info ul li{
     margin-bottom: 20px;
 }
-.contacto .col .info ul li i{
+.contact .col .info ul li i{
     color: #1CB698;
     display: inline-block;
     margin-right: 20px;
@@ -613,10 +738,10 @@ footer{
     position: relative;
     width: 100%;
 }
-footer .redes{
+footer .social{
     margin-bottom: 20px;
 }
-footer .redes a{
+footer .social a{
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -668,47 +793,47 @@ footer .arriba{
     }
 }
 @media screen and (max-width:700px){
-    .sobremi .fila{
+    .about .file{
         display: block;
     }
-    .sobremi .fila .col{
+    .about .file .col{
         width: fit-content;
     }
 
-    .skills .fila{
+    .skills .file{
         display: block;
     }
-    .skills .fila .col{
+    .skills .file .col{
         width: 100%;
     }
-    .skills .fila .col .barra-skill{
+    .skills .file .col .barra-skill{
         width: 100%;
     }
 
-    .curriculum .fila{
+    .curriculum .file{
         display: block;
     }
-    .curriculum .fila .col{
+    .curriculum .file .col{
         width: 90%;
     }
-    .curriculum .fila .derecha{
+    .curriculum .file .derecha{
         margin-left: 20px;
     }
 
-    .portfolio .galeria{
+    .projects .pro{
         display: block;
         width: 100%;
     }
-    .portfolio .galeria .proyecto{
+    .projects .pro .prot{
         max-width: 100%;
     }
-    .portfolio .galeria .proyecto img{
+    .projects .pro .prot img{
         width: 100%;
     }
-    .contacto .fila{
+    .contact .file{
         display: block;
     }
-    .contacto .fila .col{
+    .contact .file .col{
         width: 100%;
     }
 }
