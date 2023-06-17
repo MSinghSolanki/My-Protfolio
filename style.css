@@ -6,10 +6,10 @@
     padding: 0;
 }
 html{
-    /* me permite deslizar cuando hago clic en los links del menu */
+    
     scroll-behavior: smooth;
 }
-/* MENU */
+
 .contenedor-header{
     background: #1e2326;
     position: fixed;

@@ -1,44 +1,45 @@
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- MENU ENCABEZADO -->
+   
     <div class="contenedor-header">
         <header>
             <div class="logo">
-                <a href="#">Nick</a>
+                <a href="#">Mohit</a>
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <li><a href="#inicio" onclick="select()">Home</a></li>
+                    <li><a href="#sobremi" onclick="select()">About Me</a></li>
+                    <li><a href="#skills" onclick="select()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="select()">Education</a></li>
+                    <li><a href="#portfolio" onclick="select()">Projects</a></li>
+                    <li><a href="#contacto" onclick="select()">Contact me</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <div class="nav-responsive" onclick="movetoMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
     </div>
 
-    <!-- SECCION INICIO -->
+   
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
             <div class="contenedor-img">
-                <img src="img/hero.png" alt="">
+                <img src="/" alt="">
             </div>
-            <h1>NICK PEREZ</h1>
-            <h2>Ingeniero de Software - Experto UI/UX</h2>
+            <h1>Mohit Singh Solanki</h1>
+            <h2>Full Stack Developer</h2>
             <div class="redes">
                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -52,40 +53,13 @@
     <!-- SECCION SOBRE MI -->
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
-            <h2>Sobre Mí</h2>
-            <p><span>Hola, soy Nick Perez.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
+            <h2>About Me</h2>
+            <p><span>Hi ,I'm Mohit </span>  I have always been interested in solving problems and finding
+                creative solutions. As a developer, I enjoy tackling new challenges
+                every day and constantly improving my problem-solving skills.</p>
 
             <div class="fila">
-                <!-- datos personales -->
-                <div class="col">
-                    <h3>Datos Personales</h3>
-                    <ul>
-                        <li>
-                            <strong>Cumpleaños</strong>
-                            15-01-1980
-                        </li>
-                        <li>
-                            <strong>Teléfono</strong>
-                            2555 5454545
-                        </li>
-                        <li>
-                            <strong>Email</strong>
-                            cw@example.com
-                        </li>
-                        <li>
-                            <strong>Website</strong>
-                            www.example.com
-                        </li>
-                        <li>
-                            <strong>Dirección</strong>
-                            123 San Luis, Argentina
-                        </li>
-                        <li>
-                            <strong>Cargo</strong>
-                            <span>FREELANCE</span>
-                        </li>
-                    </ul>
-                </div>
+              
 
                 <!-- intereses -->
                 <div class="col">
@@ -93,15 +67,15 @@
                     <div class="contenedor-intereses">
                         <div class="interes">
                             <i class="fa-solid fa-gamepad"></i>
-                            <span>JUEGOS</span>
+                            <span>Games</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-headphones"></i>
-                            <span>MUSICA</span>
+                            <span>Music</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-plane"></i>
-                            <span>VIAJAR</span>
+                            <span>Travel</span>
                         </div>
                         <div class="interes">
                             <i class="fa-brands fa-apple"></i>
@@ -109,26 +83,26 @@
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-person-hiking"></i>
-                            <span>DEPORTE</span>
+                            <span>Sport</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-book"></i>
-                            <span>LIBROS</span>
+                            <span>Books</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-car"></i>
-                            <span>AUTOS</span>
+                            <span>Cars</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-camera"></i>
-                            <span>FOTOS</span>
+                            <span>Photos</span>
                         </div>
                         
                     </div>
                 </div>
             </div>
             <button>
-                Descargar CV <i class="fa-solid fa-download"></i>
+             <a href="https://www.canva.com/design/DAFkUsU10_k/KBgEl2hxqq1gPhabSSSlUQ/edit?utm_content=DAFkUsU10_k&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"></a>  Download CV <i class="fa-solid fa-download"></i>
                 <span class="overlay"></span>
             </button>
         </div>
