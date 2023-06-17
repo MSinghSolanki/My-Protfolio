@@ -133,6 +133,7 @@ html{
 }
 .about .file{
     display: flex;
+    justify-content: center;
 }
 .about .file .col
 {
@@ -208,6 +209,59 @@ html{
 .about button:hover .overlay{
     width: 100%;
 }
+
+
+
+
+/* CSS */
+.button-89 {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #fff;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+text-decoration: none;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
 /* SECCION S K I L L S */
 .skills{
     background-color: #252A2E;
@@ -274,10 +328,13 @@ h1, h5, p {
 }
 
 .my-skills{
-  color: khaki;
-  margin-top: 1em;
-  letter-spacing: 1.4px;
-  line-height: 1.2;
+    display: flex;
+    color: #1CB698;
+    margin-top: 0em;
+    letter-spacing: 2.4px;
+    line-height: 1.2;
+    justify-content: center;
+    font-size: 4rem;
 }
 
 h5 {
@@ -384,6 +441,7 @@ p {
 
 .edu{
   text-align: center;
+  font-size: 3rem;
 }
 
 .educate {
