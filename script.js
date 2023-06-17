@@ -39,3 +39,35 @@ function efectoHabilidades(){
 window.onscroll = function(){
     efectoHabilidades();
 } 
+
+var texts = [
+    "Hi ,I'm Mohit.I am a full stack Developer",
+    "I love coding",
+    "Passionate about web development",
+    "As a developer, I enjoy tackling new challenges,every day and constantly improving my problem-solving skills",
+  ];
+  
+  var typewriter = document.getElementById("typewriter");
+  var delay = 2000; // Delay between text changes in milliseconds
+  
+  function typeText(text, index) {
+    if (index < text.length) {
+      typewriter.textContent = text.substring(0, index + 1);
+      setTimeout(function() {
+        typeText(text, index + 1);
+      }, 100); // Delay between each character being typed
+    } else {
+      setTimeout(function() {
+        changeText();
+      }, delay); // Delay before changing to the next text
+    }
+  }
+  
+  function changeText() {
+    var randomIndex = Math.floor(Math.random() * texts.length);
+    var randomText = texts[randomIndex];
+    typeText(randomText, 0);
+  }
+  
+  // Start the typewriter effect
+  changeText();

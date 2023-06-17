@@ -10,6 +10,7 @@ html{
     scroll-behavior: smooth;
 }
 
+
 .container{
     background: #1e2326;
     position: fixed;
@@ -55,7 +56,7 @@ html{
     cursor: pointer;
     display: none;
 }
-/* SECCION I N I C I O */
+/* icons */
 .icons{
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
     url(img/fondo.jpg);
@@ -208,6 +209,23 @@ html{
 }
 .about button:hover .overlay{
     width: 100%;
+}
+
+.typewriter {
+    display: inline-block;
+    overflow: hidden;
+    animation: typing 3s steps(40, end);
+    white-space: nowrap;
+    font-size: 1rem;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
 
 
